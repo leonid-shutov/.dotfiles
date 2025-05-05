@@ -1,0 +1,6 @@
+{
+  "coc.preferences.formatOnSave": true,
+  "suggest.noselect": true,
+  "typescript.suggestionActions.enabled": false,
+  "javascript.suggestionActions.enabled": false
+}
