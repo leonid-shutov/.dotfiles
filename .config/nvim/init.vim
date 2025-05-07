@@ -28,11 +28,18 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
     additional_vim_regex_highlighting = false,
   },
-  ensure_installed = {"javascript", "typescript"},
+  ensure_installed = {"javascript", "typescript", "json"},
 }
 EOF
 
-"lua require('csvview').setup()
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+set foldlevel=99            " Start with all folds open
+set foldenable
+
+autocmd FileType json setlocal foldmethod=expr
+autocmd FileType json setlocal foldexpr=nvim_treesitter#foldexpr()
+
 
 colorscheme github_dark_default
 
