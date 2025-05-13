@@ -4,7 +4,7 @@ set -e
 
 git clone -b v0.11.1 https://github.com/neovim/neovim.git $HOME/personal/neovim
 
-sudo dnf -y install ninja-build cmake gcc make gettext curl glibc-gconv-extra ripgrep
+sudo dnf -y install ninja-build cmake gcc make gettext curl glibc-gconv-extra ripgrep fzf
 
 cd $HOME/personal/neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo
