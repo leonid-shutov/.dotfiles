@@ -53,6 +53,6 @@ append() {
 cd $script_dir
 copy_dir env/.config $HOME/.config
 copy_dir env/.local $HOME/.local
-copy_file env/.Xresources $HOME/.Xresources
-append env/.bashrc $HOME/.bashrc
+copy_file env/.Xresources $HOME
+cat env/.bashrc >> $HOME/.bashrc
 

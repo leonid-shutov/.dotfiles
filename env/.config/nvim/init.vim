@@ -43,7 +43,7 @@ autocmd FileType json setlocal foldexpr=nvim_treesitter#foldexpr()
 
 colorscheme github_dark_default
 
-let g:coc_global_extensions = ['coc-eslint', 'coc-prettier', 'coc-json', 'coc-html', 'coc-css', 'coc-docker', 'coc-fzf-preview', 'coc-sql', 'coc-swagger', 'coc-tsserver']
+let g:coc_global_extensions = ['coc-eslint', 'coc-prettier', 'coc-html', 'coc-css', 'coc-docker', 'coc-fzf-preview', 'coc-sql', 'coc-swagger', 'coc-tsserver']
 
 " Having longer updatetime (default is 4000 ms = 4s) leads to noticeable
 " delays and poor user experience
