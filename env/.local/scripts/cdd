@@ -1,0 +1,13 @@
+cdd() {
+  selected=$(find $HOME -maxdepth 2 -mindepth 1 -type d | fzf)
+
+  echo $selected
+
+  if [[ -z "$selected" ]]; then
+    exit 0
+  fi
+
+  cd "$selected"
+  nvim .
+}
+

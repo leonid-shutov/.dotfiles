@@ -46,7 +46,13 @@ copy_file() {
     execute cp $from $to/$name
 }
 
-cd $script_dir
-copy_dir .config $HOME/.config
+append() {
+  execute cat $1 >> $2
+}
 
+cd $script_dir
+copy_dir env/.config $HOME/.config
+copy_dir env/.local $HOME/.local
+copy_file env/.Xresources $HOME/.Xresources
+append env/.bashrc $HOME/.bashrc
 
