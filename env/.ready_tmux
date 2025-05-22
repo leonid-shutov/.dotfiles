@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-tmux send-keys "nvim ." C-m
+tmux send-keys "nvm use && nvim ." C-m
 tmux neww -n "scratchpad"
 tmux send-keys -t "scratchpad" "nvm use" C-m
 tmux select-window -t 1
