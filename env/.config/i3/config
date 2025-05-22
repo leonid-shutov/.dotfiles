@@ -199,5 +199,6 @@ assign [class="Telegram"] $ws3
 assign [class="firefox"] $ws2
 
 exec --no-startup-id telegram
-exec --no-startup-id firefox
+exec --no-startup-id firefox-nightly
 
+default_border pixel 0
