@@ -191,14 +191,24 @@ bar {
 
 exec --no-startup-id xrandr --rate 120
 
+set $ws4 "4: Slack"
 set $ws3 "3: Telegram"
 set $ws2 "2: Web"
 set $ws1 "1: Terminal"
 
+assign [class="Slack"] $ws4
 assign [class="Telegram"] $ws3
 assign [class="firefox"] $ws2
 
+exec --no-startup-id slack
 exec --no-startup-id telegram
 exec --no-startup-id firefox-nightly
 
 default_border pixel 0
+
+# class                 border  bground text    indicator child_border
+client.focused          #FFFFFF #000000 #FFFFFF #2E9EF4   #285577
+client.focused_inactive #000000 #000000 #FFFFFF #484E50   #5F676A
+client.unfocused        #000000 #000000 #888888 #292D2E   #222222
+client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
