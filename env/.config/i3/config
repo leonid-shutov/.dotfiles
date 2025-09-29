@@ -191,15 +191,18 @@ bar {
 
 exec --no-startup-id xrandr --rate 120
 
+set $ws5 "5: Spotify"
 set $ws4 "4: Slack"
 set $ws3 "3: Telegram"
 set $ws2 "2: Web"
 set $ws1 "1: Terminal"
 
+assign [class="Spotify"] $ws5
 assign [class="Slack"] $ws4
 assign [class="Telegram"] $ws3
 assign [class="firefox"] $ws2
 
+exec --no-startup-id GDK_SCALE=2 GDK_DPI_SCALE=0.5 flatpak run com.spotify.Client
 exec --no-startup-id slack
 exec --no-startup-id telegram
 exec --no-startup-id firefox-nightly
@@ -212,3 +215,12 @@ client.focused_inactive #000000 #000000 #FFFFFF #484E50   #5F676A
 client.unfocused        #000000 #000000 #888888 #292D2E   #222222
 client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+
+bindsym $mod+Shift+s exec scrot -s ~/Pictures/screenshot_%Y-%m-%d_%H-%M-%S.png
+
+exec --no-startup-id feh --bg-scale ~/Pictures/raubichi.jpg
+
+bindsym $mod+Ctrl+q kill
+bindsym $mod+Ctrl+e exit
+bindsym $mod+Ctrl+r reload
+
