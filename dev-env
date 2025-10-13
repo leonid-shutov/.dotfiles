@@ -54,6 +54,5 @@ cd $script_dir
 copy_dir env/.config $HOME/.config
 copy_dir env/.local $HOME/.local
 copy_file env/.ready_tmux $HOME
-copy_file env/.Xresources $HOME
 cat env/.bashrc >> $HOME/.bashrc
 

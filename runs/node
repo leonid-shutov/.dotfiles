@@ -2,7 +2,7 @@
 
 set -e
 
-sudo dnf -y install gawk
+sudo pacman -S gawk
 
 curl -fsSL https://raw.githubusercontent.com/mklement0/n-install/stable/bin/n-install | bash -s lts
 
