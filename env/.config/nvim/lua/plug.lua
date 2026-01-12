@@ -11,7 +11,7 @@ Plug('kdheepak/lazygit.nvim')
 Plug('preservim/nerdcommenter')
 Plug('neoclide/coc.nvim', { ['branch'] = 'release' })
 Plug('nvim-lua/plenary.nvim')
-Plug('nvim-treesitter/nvim-treesitter')
+Plug('nvim-treesitter/nvim-treesitter', { ['branch'] = 'master' })
 Plug('chrisbra/csv.vim')
 Plug('ThePrimeagen/harpoon')
 
