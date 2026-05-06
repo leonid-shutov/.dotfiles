@@ -14,9 +14,15 @@ after-startup-command = [
     'exec-and-forget open -a "Microsoft Outlook"',
     'exec-and-forget open -a "Spotify"',
     'exec-and-forget open -a "Bitwarden"',
-    'exec-and-forget open -a "Telegram"',
     'exec-and-forget open -a "HEY"',
-    'exec-and-forget open -a "Safari"',
+    'exec-and-forget open -a "Finder"',
+    'exec-and-forget open -a "Cisco Secure Client"',
+    'exec-and-forget open -a "System Settings"',
+    'exec-and-forget "/Applications/Firefox Nightly.app/Contents/MacOS/firefox" --new-window https://claude.ai',
+    'exec-and-forget "/Applications/Firefox Nightly.app/Contents/MacOS/firefox" --new-window about:newtab',
+    'exec-and-forget open -a "Rancher Desktop"',
+    'exec-and-forget open -a "Code"',
+    'exec-and-forget open -a "Postman"',
 ]
 
 # Start AeroSpace at login
@@ -245,22 +251,47 @@ on-mode-changed = []
     run = 'move-node-to-workspace O'
 
 [[on-window-detected]]
-    if.app-id = 'com.hey.app.desktop'
-    run = 'move-node-to-workspace E'
+    if.app-id = 'com.spotify.client'
+    run = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
     if.app-id = 'com.bitwarden.desktop'
     run = 'move-node-to-workspace P'
 
 [[on-window-detected]]
-    if.app-id = 'com.spotify.client'
-    run = 'move-node-to-workspace 5'
+    if.app-id = 'com.hey.app.desktop'
+    run = 'move-node-to-workspace E'
 
 [[on-window-detected]]
-    if.app-id = 'ru.keepcoder.Telegram'
-    run = 'move-node-to-workspace 3'
+    if.app-id = 'com.apple.finder'
+    run = 'move-node-to-workspace F'
 
 [[on-window-detected]]
-    if.app-id = 'com.apple.Safari'
-    run = 'move-node-to-workspace 4'
+    if.app-id = 'com.cisco.secureclient.gui'
+    run = 'move-node-to-workspace V'
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.systempreferences'
+    run = 'move-node-to-workspace S'
+
+[[on-window-detected]]
+  if.app-id = 'org.mozilla.nightly'
+  if.window-title-regex-substring = 'Claude'
+  run = 'move-node-to-workspace C'
+
+[[on-window-detected]]
+    if.app-id = 'org.mozilla.nightly'
+    run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+    if.app-id = 'io.rancherdesktop.app'
+    run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
+    if.app-id = 'com.microsoft.VSCode'
+    run = 'move-node-to-workspace 7'
+
+[[on-window-detected]]
+    if.app-id = 'com.postmanlabs.mac'
+    run = 'move-node-to-workspace R'
 
