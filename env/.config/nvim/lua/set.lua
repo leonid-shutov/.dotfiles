@@ -13,4 +13,5 @@ vim.opt.foldenable = true
 vim.opt.cmdheight = 0
 vim.opt.langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖ;ABCDEFGHIJKLMNOPQRSTUVWXYZ:,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz"
 vim.cmd([[nnoremap ; $]])
-
+vim.g.netrw_list_hide = [[^\.\.\=/\?$]]
+vim.g.netrw_hide = 1
