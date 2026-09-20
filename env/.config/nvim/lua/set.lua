@@ -15,3 +15,4 @@ vim.opt.langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖ;ABCDEF
 vim.cmd([[nnoremap ; $]])
 vim.g.netrw_list_hide = [[^\.\.\=/\?$]]
 vim.g.netrw_hide = 1
+

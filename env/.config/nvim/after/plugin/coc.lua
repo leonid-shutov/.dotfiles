@@ -1,6 +1,6 @@
 vim.g.coc_global_extensions = {
   'coc-json', 'coc-eslint', 'coc-prettier', 'coc-html', 'coc-css',
-  'coc-docker', 'coc-fzf-preview', 'coc-sql', 'coc-swagger', 'coc-tsserver'
+  'coc-docker', 'coc-fzf-preview', 'coc-sql', 'coc-swagger', 'coc-tsserver', 'coc-pyright'
 }
 
 -- Having longer updatetime (default is 4000 ms = 4s) leads to noticeable
